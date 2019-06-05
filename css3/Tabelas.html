@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        table{
+            background-color: #ccc;
+            border-collapse: collapse; /* Remove todo o espaçamento que tem entre as bordas */
+        }
+
+        table thead{
+            background-color: blue;
+        }
+
+        table td:first-child{
+            border: 1px solid black;
+        }
+
+        table > caption{
+            caption-side: top;
+            font-style: italic;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption>Meses</caption>
+        <thead> <!-- Cabeçalho da tabela -->
+            <tr> <!-- linhas -->
+                <td>Mês</td> <!-- Colunas -->
+                <td>Ano</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maio</td>
+                <td>2016</td>
+            </tr>
+
+            <tr>
+                <td>Junho</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Junho</td>
+                <td>2017</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

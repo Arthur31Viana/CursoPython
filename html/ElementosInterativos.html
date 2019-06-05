@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!-- Dar detalhes sobre uma imagem ou tabela -->
+    <details>
+        <summary>Alguns detalhes</summary>
+        <p>Mais informações sobre os detalhes.</p>
+    </details>
+
+    <br>
+
+<!-- Simples caixa de dialogo pop-up -->
+    <dialog id="favDialog">
+        <form method="dialog">
+            <section>
+                <p><label for="favAnimal">Animal favorito</label>
+                    <select id="favAnimal">
+                        <option></option>
+                        <option>Panda Vermelho</option>
+                        <option>Macaco Aranha</option>
+                        <option>Camarão Salmoura</option>
+                    </select></p>
+            </section>
+
+            <menu>
+                <button id="cancel" type="reset">Cancelar</button>
+                <button type="submit">Confirmar</button>
+            </menu>
+
+        </form>
+    </dialog>
+
+    <menu>
+        <button id="updateDetails">Atualizar detalhes</button>
+    </menu>
+
+
+<!-- Menu simples-->
+    <menu type="toolbar">
+        <li>
+            <button type="menu" menu="file-menu">Arquivo</button>
+            <menu type="context" id="file-menu">
+                <menuitem label="New..." onclick="newFile()"></menuitem>
+                <menuitem label="Save..." onclick="saveFile()"></menuitem>
+            </menu>
+        </li>
+        <li>
+            <button type="menu" menu="edit-menu">Editar</button>
+            <menu type="context" id="edit-menu">
+                <menuitem label="Cut..." onclick="cutEdit()"></menuitem>
+                <menuitem label="Copy..." onclick="copyEdit()"></menuitem>
+                <menuitem label="Paste..." onclick="pasteEdit()"></menuitem>
+            </menu>
+        </li>
+    </menu>
+
+</body>
+</html>

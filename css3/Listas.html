@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        ul{
+            list-style: disc;
+        }
+
+        ol{
+            list-style: decimal;
+        }
+
+        body{
+            counter-reset: mynum;  /* Define um contador e zera */
+        }
+
+        p.numbered:before{
+            content: counter(mynum) ": ";
+            counter-increment: mynum;  /* Onde incrementar a contagem */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Lista não ordenada</h2>
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+        <li>List item 4</li>
+    </ul>
+
+    <ol>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+        <li>List item 4</li>
+    </ol>
+
+    <p class="numbered"> Lorem ipsum </p>
+    <p class="numbered"> Dolor sit </p>
+    <p class="numbered"> Amet consectetuer </p>
+    <p class="numbered"> Magna aliquam </p>
+    <p class="numbered"> Autem veleum </p>
+
+</body>
+</html>

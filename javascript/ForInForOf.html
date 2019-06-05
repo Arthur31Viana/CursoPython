@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript"></script>
+</head>
+<body>
+
+    <script>
+        var lista = ['João', 'Maria', 'José']
+
+/* Criar uma variável item para cada um da lista (Posição de cada na lista) */
+        for(item in lista){
+            console.log(item);
+            console.log(lista[item]);
+        }
+/* Criar uma variável item para cada um da lista (Nome de cada na lista) */
+        for(item of lista){
+            console.log(item);
+        }
+
+        var lista3= [{nome:'Arthur', idade:'27'}, {nome:'Fulano', idade:'29'}]
+
+        for(item of lista3){
+            console.log(item.nome + ' - ' + item.idade);
+        }
+    </script>
+
+</body>
+</html>

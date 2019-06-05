@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript"></script>
+</head>
+<body>
+
+    <!-- Executa varias variáveis se não colocar break -->
+    <script>
+        var fruta = 'pera';
+
+        switch(fruta){
+            case "laranja":
+                alert('laranja');
+                break;
+            case "maca":
+                alert('maca');
+                break;
+            case "banana":
+                alert('banana');
+                break;
+            case "cereja":
+                alert('cereja');
+                break;
+            default:
+                throw'Fruta não encontrada'; /* Lança um erro, invés de notificar o erro */
+        }
+    </script>
+
+</body>
+</html>

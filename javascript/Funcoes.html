@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript"></script>
+</head>
+<body>
+
+    <script>
+        /* Definindo função */
+        function calculaDobro(){
+            console.log(2+4);
+        }
+
+        /* Chamando função */
+        calculaDobro();
+
+        /* Parametros */
+        function calculaDobro(num){
+            var dobro = num * 2
+            console.log(dobro);
+        }
+
+        calculaDobro(4);
+
+        /* Retornando valores */
+        function somaNumeros(num1, num2){
+            return num1 + num2;
+        }
+
+        var total = somaNumeros(2, 5);
+        document.write(total);
+
+        /* Atribuindo a função a uma variável */
+        var a = function(num){
+            return num/2;
+        }
+
+        document.write('<br>' + a(20));
+
+        /* Aero function */
+        var b = (num) =>{
+            return num*3;
+        }
+
+        document.write('<br>' + b(3));
+
+        /* Função dentro de função */
+        var bola = 'Amarela';
+
+        function imprimeBola(){
+            var carrinho = 'verde';
+            document.write('<br>' + bola);
+
+            function imprimePipa(){
+                document.write('<br>' + carrinho);
+            }
+
+            imprimePipa();
+        }
+
+        imprimeBola();
+        document.write('<br' + carrinho);
+    </script>
+
+</body>
+</html>

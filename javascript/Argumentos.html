@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript"></script>
+</head>
+<body>
+
+    <script>
+        function myConcat(separador){
+            var result = "", //Inicializa a lista
+            i;
+            //Itera por meio de argumentos
+            for(i=1; i<arguments.length; i++){
+                result += arguments[i] + separador;
+            }
+            return document.write(result);
+        }
+
+        myConcat(", ", "red", "orange", "blue");
+
+        //Parâmetros de função padrão
+        function multiplicar(a, b = 1){
+            return a*b;
+        }
+
+        document.write(multiplicar(5));
+    </script>
+
+</body>
+</html>

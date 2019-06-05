@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="UTF-8">
+        <title></title>
+    <style type="text/css">
+        #conteudo{
+            width: 500px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: #ccc;
+        }
+
+        /* Se o dispositivo tiver 412px de tamanho de tela */
+        @media(max-width: 412px){
+            body{
+                background-color: lightgreen;
+            }
+
+            h1{
+                color: black;
+            }
+        }
+
+        /* Se o dispositivo tiver no minimo 500px de tamanho de tela */
+        @media(min-width: 500px){
+            body{
+                background-color: green;
+            }
+
+            h1{
+                color: yellow;
+            }
+        }
+
+        /* Se o dispositivo tiver no minimo 1000px de tamanho de tela */
+        @media(min-width: 1000px){
+            body{
+                background-color: red;
+            }
+
+            h1{
+                color: white;
+            }
+        }
+
+        /* Tela do iphone 5 */
+        @media only screen
+            and(max-width: 568px)
+            and(min-width: 320px){
+            body{
+                background-color: pink;
+            }
+        }
+
+        /* Tela do ipad */
+        @media only screen
+            and min-device-width: 768px)
+            and(max-device-width: 1024px)
+            and(orientation: landscape){
+            body{
+                background-color: black;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="conteudo">
+        <h1>Meu conteúdo</h1>
+    </div>
+
+</body>
+</html>

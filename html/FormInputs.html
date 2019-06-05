@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script type="text/javascript">
+        function incrementa(){
+            document.getElementsByTagName('nota') value+= 10;
+        }
+
+        function decrementa(){
+            document.getElementsByTagName('nota') value-= 10;
+        }
+    </script>
+</head>
+<body>
+
+<form method="GET" action="#">
+
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <input type="radio" id="radio">
+        <label for="radio">Click me</label>
+        <input type="text" name="nome" placeholder="Digite seu nome"> <!--- placeholder="" é usado para colocar o nome no fundo do quadrinho -->
+    </fieldset>
+
+    <input list="browsers"/>
+    <datalist id="browsers">
+        <option value="Chrome"></option>
+        <option value="Firefox"></option>
+        <option value="Internet Explorer"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+    </datalist>
+
+    <select name="select">
+        <option value="valor1" selected>Masculino</option>
+        <option value="valor2">Feminino</option>
+    </select>
+
+    <br>
+
+    <textarea name="textarea" rows="10" cols="50">Digite o texto aqui</textarea>
+
+    <br>
+
+    <input type="range" name="b" value="50"/>100+<input type="number" name="a" value="10"/> = <output name="result"></output>
+
+    <br>
+
+    <progress value="50" max="100" id="nota">50%</progress>
+    <button onclick="incrementa">Incrementa</button>
+    <button onclick="decrementa">Decrementa</button>
+
+    <br>
+
+    <input type="checkbox" name="my_checkbox"><br> <!-- Caixa de seleção -->
+    <input type="color" name="color"><br> <!-- Caixa de cores -->
+    <input type="date" name="date"><br> <!-- Calendário -->
+    <input type="datetime-local" name="datetime" placeholder="Data de nascimento"><br> <!-- Data manual -->
+    <input type="file" name="img"><br> <!-- Selecionar imagem -->
+    <input type="password" name="pwd" placeholder="Digite uma senha"><br> <!-- Senha -->
+    <input type="range" name="points" min="0" max="10"><br> <!-- Barra de rolagem -->
+    <input type="email" name="usremail" placeholder="Digite o e-mail" required><br> <!-- Barra de email. required para ser obrigatório-->
+    <input type="reset"> <!-- Limpa o formulário-->
+
+    <button type="submit">Enviar</button>
+
+</form>
+
+</body>
+</html>
